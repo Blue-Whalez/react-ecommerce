@@ -3,6 +3,7 @@ import MailIcon from '@mui/icons-material/Mail';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { Link as MuiLink } from '@mui/material';
 import AppBar from '@mui/material/AppBar';
 import Badge from '@mui/material/Badge';
 import Box from '@mui/material/Box';
@@ -13,12 +14,10 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Typography from '@mui/material/Typography';
 import * as React from 'react';
+import { Link } from 'react-router-dom';
+import { ROUTE_LIST } from 'utils';
 import Logo from '../Logo';
 import SearchBar from '../SearchBar';
-import { ROUTE_LIST } from 'utils';
-import { Link } from 'react-router-dom';
-import { Stack } from '@mui/material';
-import { Link as MuiLink } from '@mui/material';
 
 export function HeaderDesktop() {
   const [anchorEl, setAnchorEl] = React.useState(null);
